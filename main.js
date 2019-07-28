@@ -1,6 +1,6 @@
 // prompt関数は入力ダイアログを表示して、入力した値を変数(今回の場合はinput変数)に代入する
 // promptのドキュメント: https://developer.mozilla.org/ja/docs/Web/API/Window/prompt
-const input = prompt('今日の天気は？次の3つのうち、いずれかの文字列を入力してくささい。(晴れ or くもり or 雨)');
+const input = prompt('今日の天気は？次の3つのうち、いずれかの文字列を入力してください。(晴れ or くもり or 雨)');
 
 // ここより下に条件分岐のコードを記述してください。
 
@@ -14,3 +14,12 @@ const input = prompt('今日の天気は？次の3つのうち、いずれかの
 //   - elseを使う
 //
 // alertのドキュメント: https://developer.mozilla.org/ja/docs/Web/API/Window/alert
+if (input === '晴れ') {
+    alert('今日は気持ちの良い一日になりそうですね！');
+} else if (input === 'くもり') {
+    alert('どんよりした天気ですが今日も一日がんばりましょう！');
+} else if (input === '雨') {
+    alert('家でゆっくり過ごすのも良いと思いますよ！');
+} else {
+    alert('晴れ・くもり・雨以外の文字列には対応していません。');
+}
